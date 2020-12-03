@@ -3,6 +3,7 @@ section{
 }
 div.body-container{
     background-color: white;
+    padding: 1%;
 }
 div.main-project{
     background:url("https://picsum.photos/500");
@@ -10,7 +11,7 @@ div.main-project{
     height: 500px;
     border-radius: 10px;
     width:40%;
-    border: 1px solid black;
+    
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -24,13 +25,14 @@ div.project-image{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 3%;
 }
 
 div.project-container{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 70%;
+    justify-content: space-between;
+    width: 100%;
 }
 
 div.project-top{
@@ -41,7 +43,7 @@ div.project-top{
 
 div.info-container{
     width:40%;
-    border: 1px solid black;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -71,4 +73,16 @@ footer{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+
+header{
+    padding: 1%;
+}
+
+.main-blurb{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 2.5rem;
 }
