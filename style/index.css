@@ -49,7 +49,7 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
 
 *{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 html{
     font-size:62.5%;
@@ -76,6 +76,7 @@ h2{
 nav {
     margin-left: 1%;
     width: max-content;
+    text-align: center;
 }
 
 nav a, div.title a, a.contact-me{
@@ -104,13 +105,13 @@ header{
 }
 
 /* body */
-div.title{
+.title{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 1%;
 }
-div.main-project{
+.main-project{
     background:url("https://picsum.photos/500");
     width: 40vw;
     height: 50vh;
@@ -121,7 +122,7 @@ div.main-project{
     background-position: center;
 }
 .info-container{
-    width:40%;
+    width:45%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -166,12 +167,168 @@ footer{
     align-items: center;
     background-color: #DDD;
     justify-content: space-between;
-    height: 15vh;
     padding: 3% 0;
+}
+
+footer h2, footer a{
+    margin: .8%;
+}
+
+/*Tablet View*/
+@media (max-width: 800px) {
+    body{
+        font-size:1.5rem;
+        line-height:1.2;
+    }
+    .title {
+        flex-flow: column wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .info-container{
+        align-items: center;
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-flow: column wrap;
+        margin: 2% 0;
+    }
+    nav a, div.title a, a.contact-me {
+        font-size: 2.3rem;
+    }
+    h2{
+        font-size: 4.0rem;
+    }
+    header{
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 0 1%;
+        height: 100%;
+    }
+    footer{
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #DDD;
+        padding: 2% 0;
+    }
+    main {
+        width: 100%;
+    }
+    .title{
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 2% 0;
+    }
+    .info-container p{
+        width: 50%;
+        margin-top: 5%;
+    }
+    .main-project{
+        background:url("https://picsum.photos/500");
+        width: 40vw;
+        height: 60vh;
+        border-radius: 10px;
+        width:90%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .project-image{
+        width: 40vw;
+        height: 30vh;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        margin: 1% 4%;
+    }
+    .project-name{
+        font-size: 1.9rem;
+    }
 }
 
 /*Phone View*/
 
 @media (max-width: 500px) {
-
+    body{
+        font-size:1.5rem;
+        line-height:1.2;
+    }
+    .title {
+        flex-flow: column wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .info-container{
+        align-items: center;
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        flex-flow: column wrap;
+        margin: 2% 0;
+    }
+    nav a, div.title a, a.contact-me {
+        font-size: 1.8rem;
+    }
+    h2{
+        font-size: 3.0rem;
+    }
+    h1 {
+        font-size: 4.0rem;
+    }
+    header{
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 0 1%;
+        height: 100%;
+    }
+    footer{
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #DDD;
+        padding: 2% 0;
+    }
+    main {
+        width: 100%;
+    }
+    .title{
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 2% 0;
+    }
+    .info-container p{
+        width: 70%;
+        margin-top: 5%;
+        font-size: 1.9rem;
+    }
+    .main-project{
+        background:url("https://picsum.photos/500");
+        width: 40vw;
+        height: 60vh;
+        border-radius: 10px;
+        width:90%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .project-image{
+        width: 40vw;
+        height: 30vh;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        margin: 1% 4%;
+    }
+    .project-name{
+        font-size: 1.5rem;
+    }    
 }
